@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>حجز موعد – عيادة الأسنان</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main>
+<h1>عيادة الأسنان</h1>
+<p class="sub">اختار الدكتور واليوم والميعاد، وهنأكدلك الحجز.</p>
+<div class="tabs" role="tablist">
+  <button class="tab" role="tab" id="t1" aria-selected="true">احجز موعد</button>
+  <button class="tab" role="tab" id="t2" aria-selected="false">الحجوزات</button>
+</div>
+ <section id="book">
+  <h2>١. اختار الدكتور</h2>
+  <div class="docs" id="docs"></div>
+  <div id="s2" hidden><h2>٢. اختار اليوم</h2><div class="grid" id="dates"></div></div>
+  <div id="s3" hidden><h2>٣. اختار الميعاد</h2><div class="grid" id="times"></div></div>
+  <div id="s4" hidden>
+    <h2>٤. بياناتك</h2>
+    <label for="nm">الاسم</label><input id="nm" autocomplete="name">
+    <label for="ph">رقم الموبايل</label><input id="ph" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" style="text-align:right">
+    <p class="err" id="err" role="alert"></p>
+    <button class="go" id="go">تأكيد الحجز</button>
+  </div>
+  <div class="ok" id="ok" hidden></div>
+</section>
+
+<section id="list" hidden></section>
+</main>
+
+
+
+<script src="./main.js"></script>
+</body>
+</html>
